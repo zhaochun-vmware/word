@@ -1,0 +1,15 @@
+Sub demo()
+Dim picwidth
+Dim picheight
+On Error Resume Next
+
+For Each Shape In ActiveDocument.InlineShapes
+
+Shape.LockAspectRatio = False
+Shape.Reset
+Shape.ScaleWidth = 100
+Shape.ScaleHeight = 100
+
+Next
+
+End Sub
